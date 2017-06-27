@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task5-formn</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="login">
+		<input type="text" name="sex">
+		<form action="/getInfo" method="get">
+			<div class="submit">
+				<button>提交</button>
+			</div>
+			<div class="username">
+				<label for="username">姓名</label>
+				<input id="username" type="text" name="username" value="">
+			</div>
+			<div class="password">
+				<label for="password">密码</label>
+				<input id="password" type="password" name="password" placeholder="输入密码">
+			</div>
+			<div class="hobby">
+				<label for="hobby">爱好</label>
+				<input type="checkbox" name="hobby" value="read">读书
+				<input type="checkbox" name="hobby" value="music">听歌
+				<input type="checkbox" name="hobby" value="study">学习
+			</div>
+			<div class="sex">
+				<label for="sex">性别</label>
+				<input type="radio" name="sex" value="male">男
+				<input type="radio" name="sex" value="female">女
+			</div>
+			<div class="file">
+				<input type="file" name="myfile" accept="image/png">
+			</div>
+			<div class="select">
+				<select name="city" id="city">
+					<option value="bj">北京</option>
+					<option value="sh">上海</option>
+					<option value="hz">杭州</option>
+					<option value="sz">深圳</option>
+				</select>
+			</div>
+			<div class="textarea">
+				<textarea name="article" id="" cols="30" rows="10">1122223333</textarea>
+				<input type="hidden" name="csrf" value="1234567890123">
+				<input type="button" value="Button" />不会提交
+				<input type="submit" value="submit" />会提交
+				<input type="reset" value="Reset" />重置用户输入
+			</div>
+		</form>
+	</div>
+</body>
+</html>

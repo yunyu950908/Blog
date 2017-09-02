@@ -1,5 +1,4 @@
 import React from "react"
-import Square from "./Square"
 
 export default class Board extends React.Component {
     renderSquare(i) {
@@ -32,5 +31,16 @@ export default class Board extends React.Component {
             </div>
         );
     }
+}
+
+// pure Component
+function Square(props) {
+    return (
+        <button
+            className="square"
+            onClick={props.onClick}>
+            {props.value}
+        </button>
+    );
 }
 

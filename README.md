@@ -2,4 +2,4 @@
 
 ## React 井字棋
 
-[效果预览](https://github.com/yunyu950908/blog/build)
+[效果预览](https://yunyu950908.github.com/blog/build)
